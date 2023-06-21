@@ -74,7 +74,7 @@ const SignUp = () => {
                             </label>
                             <input
                                 type="text"
-                                placeholder="Type here"
+                                placeholder="Email"
                                 className="input input-bordered w-full max-w-xs"
                                 {...register("email", {
                                     required: {

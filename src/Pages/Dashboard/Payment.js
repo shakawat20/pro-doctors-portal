@@ -24,9 +24,7 @@ const Payment = () => {
     if (isLoading) {
         return <Loading></Loading>
     }
-    console.log(stripePromise)
-
-    console.log(appointment)
+    
     return (
         <div>
 

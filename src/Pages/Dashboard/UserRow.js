@@ -1,7 +1,7 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 
-const UserRow = ({ user, refetch }) => {
+const UserRow = ({ user, refetch,index }) => {
     const { email, role } = user;
     const makeAdmin = () => {
         fetch(`https://doctors-portal-server-ten-kappa.vercel.app/user/admin/${email}`, {
@@ -32,7 +32,7 @@ const UserRow = ({ user, refetch }) => {
 
 
         <tr>
-            <th>1</th>
+            <th>{index+1}</th>
             <td>{email}</td>
             <td>{role !== 'admin' && <button onClick={makeAdmin} className="btn btn-xs">Make Admin</button>}</td>
             <td><button className="btn btn-xs">Remove User</button></td>
