@@ -11,6 +11,7 @@ const RequireAuth = ({ children }) => {
         return <Loading></Loading>
     }
     if (!user) {
+        console.log("himudas married")
         return <Navigate to="/login" state={{ from: location }} replace />
     }
    else return children

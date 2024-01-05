@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import UserRow from './UserRow';
 
 const Users = () => {
-  const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://doctors-portal-server-ten-kappa.vercel.app/user', {
+  const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://pro-doctors-portal-server-side.vercel.app/user', {
     method: 'GET',
     headers:{
       authorization: `Bearer ${localStorage.getItem('accessToken')}`

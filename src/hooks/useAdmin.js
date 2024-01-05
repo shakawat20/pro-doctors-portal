@@ -8,7 +8,7 @@ const useAdmin = user => {
 
         const email=user?.email
         if(email){
-            fetch(`https://doctors-portal-server-ten-kappa.vercel.app/admin/${email}`, {
+            fetch(`https://pro-doctors-portal-server-side.vercel.app/admin/${email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',

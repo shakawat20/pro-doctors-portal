@@ -15,6 +15,8 @@ const Login = () => {
     const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
     const [token] = useToken(user || gUser)
     let signInError
+    console.log(token)
+    console.log(from)
 
 
     useEffect(() => {

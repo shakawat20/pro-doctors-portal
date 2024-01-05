@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const UserRow = ({ user, refetch,index }) => {
     const { email, role } = user;
     const makeAdmin = () => {
-        fetch(`https://doctors-portal-server-ten-kappa.vercel.app/user/admin/${email}`, {
+        fetch(`https://pro-doctors-portal-server-side.vercel.app/user/admin/${email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

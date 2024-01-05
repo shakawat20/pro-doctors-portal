@@ -28,7 +28,7 @@ const BookingModal = ({ date, treatment, setTreatment,refetch }) => {
             price:price
         }
 
-        fetch('https://doctors-portal-server-ten-kappa.vercel.app/booking', {
+        fetch('https://pro-doctors-portal-server-side.vercel.app/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

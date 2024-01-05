@@ -6,7 +6,7 @@ import Loading from '../Shared/Loading';
 
 const AddDoctor = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-    const { data: services, isLoading } = useQuery('services', () => fetch('https://doctors-portal-server-ten-kappa.vercel.app/services').then(res => res.json()))
+    const { data: services, isLoading } = useQuery('services', () => fetch('https://pro-doctors-portal-server-side.vercel.app/services').then(res => res.json()))
 
     const imageStorageKey = '25be8eb0330c3d432b984631872a8253'
 
@@ -32,7 +32,7 @@ const AddDoctor = () => {
                         img: img
                     }
 
-                    fetch('https://doctors-portal-server-ten-kappa.vercel.app/doctor', {
+                    fetch('https://pro-doctors-portal-server-side.vercel.app/doctor', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

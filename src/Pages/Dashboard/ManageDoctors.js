@@ -8,7 +8,7 @@ import DoctorRow from './DoctorRow';
 
 const ManageDoctors = () => {
     const [deletingDoctor, setDeletingDoctor] = useState(null)
-    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch('https://doctors-portal-server-ten-kappa.vercel.app/doctor', {
+    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch('https://pro-doctors-portal-server-side.vercel.app/doctor', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }

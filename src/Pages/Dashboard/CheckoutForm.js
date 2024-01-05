@@ -16,7 +16,7 @@ const CheckoutForm = ({ appointment }) => {
     console.log("sec", clientSecret)
     useEffect(() => {
         // Create PaymentIntent as soon as the page loads
-        fetch("https://doctors-portal-server-ten-kappa.vercel.app/create-payment-intent", {
+        fetch("https://pro-doctors-portal-server-side.vercel.app/create-payment-intent", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -84,7 +84,7 @@ const CheckoutForm = ({ appointment }) => {
                 bookingId:_id
 
             }
-            fetch('https://doctors-portal-server-ten-kappa.vercel.app/payments', {
+            fetch('https://pro-doctors-portal-server-side.vercel.app/payments', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',

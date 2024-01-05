@@ -12,7 +12,7 @@ const AvailableAppointment = ({ date }) => {
     const formattedDate = format(date, 'PP')
 
 
-    const { data: services, isLoading, refetch } = useQuery(['available', formattedDate], () => fetch(`https://doctors-portal-server-ten-kappa.vercel.app/available?date=${formattedDate}`)
+    const { data: services, isLoading, refetch } = useQuery(['available', formattedDate], () => fetch(`https://pro-doctors-portal-server-side.vercel.app/available?date=${formattedDate}`)
         .then(res => res.json())
     )
     if (isLoading) {
@@ -20,7 +20,7 @@ const AvailableAppointment = ({ date }) => {
     }
 
     // useEffect(() => {
-    //     fetch(`https://doctors-portal-server-ten-kappa.vercel.app/available?date=${formattedDate}`)
+    //     fetch(`https://pro-doctors-portal-server-side.vercel.app/available?date=${formattedDate}`)
     //         .then(res => res.json())
     //         .then(data => setServices(data))
 

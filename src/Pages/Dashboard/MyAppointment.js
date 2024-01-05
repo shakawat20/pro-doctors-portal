@@ -12,7 +12,7 @@ const MyAppointment = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`https://doctors-portal-server-ten-kappa.vercel.app/booking?patient=${user.email}`, {
+            fetch(`https://pro-doctors-portal-server-side.vercel.app/booking?patient=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
